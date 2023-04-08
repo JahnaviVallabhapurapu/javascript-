@@ -173,35 +173,37 @@
 // console.log(a);
 
 
-function doJob() {
-    return new Promise(function fun(accept, reject) {
-        setTimeout(() => {
-            var flag = 10
-            if (flag === 10) {
-                // accept()
-                return new Promise(function fun(accept, reject) {
-                    var flag = true
-                    if (flag === true) {
-                        accept()
-                    } else {
-                        reject()
-                    }
-                })
-            } else {
-                reject()
-            }
-        }, 1000)
-    })
-}
+// function doJob() {
+//     return new Promise(function fun(accept, reject) {
+//         setTimeout(() => {
+//             var flag = 10
+//             if (flag === 10) {
+//                 // accept()
+//                 return new Promise(function fun(accept, reject) {
+//                     var flag = true
+//                     if (flag === true) {
+//                         accept()
+//                     } else {
+//                         reject()
+//                     }
+//                 })
+//             } else {
+//                 reject()
+//             }
+//         }, 1000)
+//     })
+// }
 
-var myPromise = doJob()
+// var myPromise = doJob()
 
-myPromise.then(
-    function () {
-        console.log("accepting the promise")
-    }
-).catch(
-    function () {
-        console.log("rejecting the promise")
-    }
-)
+// myPromise.then(
+//     function () {
+//         console.log("accepting the promise")
+//     }
+// ).catch(
+//     function () {
+//         console.log("rejecting the promise")
+//     }
+// )
+
+
